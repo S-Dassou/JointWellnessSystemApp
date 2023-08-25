@@ -49,8 +49,13 @@ class ViewController: UIViewController {
     
     @IBAction func onboardingButtonTapped(_ sender: Any) {
         print("move to other VC")
+        let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let homeVC = homeStoryboard.instantiateViewController(withIdentifier: "HomeViewController")
+        let window = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow }
+        window?.rootViewController = homeVC
+        }
     }
-}
+
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
