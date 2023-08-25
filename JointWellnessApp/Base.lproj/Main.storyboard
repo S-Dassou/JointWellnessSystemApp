@@ -20,14 +20,14 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lYO-4o-sUx">
                                 <rect key="frame" x="0.0" y="59" width="393" height="596.33333333333337"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Q04-IF-Adu">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Q04-IF-Adu">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Xep-Gc-Yos">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="Xep-Gc-Yos">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hoQ-Ih-TSy">
@@ -48,14 +48,17 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="17"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="onboardingButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6fu-fh-nmS"/>
+                                </connections>
                             </button>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="WdA-1q-6CF">
-                                <rect key="frame" x="157.66666666666666" y="670.33333333333337" width="78" height="26"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="78" id="s0t-Iy-2Ys"/>
-                                </constraints>
+                                <rect key="frame" x="138.66666666666666" y="670.33333333333337" width="115.66666666666666" height="26"/>
                                 <color key="pageIndicatorTintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="pageChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="rrL-Jl-eyc"/>
+                                </connections>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -63,15 +66,20 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jLv-vU-qX9" secondAttribute="bottom" constant="24" id="1wh-nI-90w"/>
                             <constraint firstItem="lYO-4o-sUx" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9aC-cn-hUt"/>
+                            <constraint firstItem="WdA-1q-6CF" firstAttribute="top" secondItem="lYO-4o-sUx" secondAttribute="bottom" constant="15" id="AMF-Br-nPh"/>
                             <constraint firstItem="lYO-4o-sUx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="AOf-cQ-DNt"/>
                             <constraint firstItem="jLv-vU-qX9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="B0a-As-ppv"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jLv-vU-qX9" secondAttribute="trailing" constant="24" id="k8t-Eq-4Id"/>
-                            <constraint firstItem="WdA-1q-6CF" firstAttribute="top" secondItem="lYO-4o-sUx" secondAttribute="bottom" constant="15" id="kRo-9i-ftD"/>
                             <constraint firstItem="WdA-1q-6CF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lf2-lk-Kg1"/>
                             <constraint firstItem="lYO-4o-sUx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.7" id="paQ-53-zvZ"/>
                             <constraint firstItem="lYO-4o-sUx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yHu-Iw-WXV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="onboardingCollectionView" destination="lYO-4o-sUx" id="yGk-hh-8SN"/>
+                        <outlet property="onboardingPageControl" destination="WdA-1q-6CF" id="MkD-La-wz5"/>
+                        <outlet property="onboardingSkipButton" destination="jLv-vU-qX9" id="pDX-pJ-vfu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
