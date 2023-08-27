@@ -18,6 +18,7 @@
 		F656088C2A979E0B00BC12DB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F656088B2A979E0B00BC12DB /* Lottie */; };
 		F65608922A98E84C00BC12DB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F65608912A98E84C00BC12DB /* Home.storyboard */; };
 		F65608942A98F16200BC12DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608932A98F16200BC12DB /* HomeViewController.swift */; };
+		F65608EA2A9B9C2700BC12DB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608E92A9B9C2700BC12DB /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		F61F8AEA2A93C093003856C5 /* OnboardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		F65608912A98E84C00BC12DB /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F65608932A98F16200BC12DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F65608E92A9B9C2700BC12DB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +73,13 @@
 				F61F8AD92A938009003856C5 /* ViewController.swift */,
 				F61F8ADB2A938009003856C5 /* Main.storyboard */,
 				F65608912A98E84C00BC12DB /* Home.storyboard */,
+				F65608932A98F16200BC12DB /* HomeViewController.swift */,
 				F61F8ADE2A93800A003856C5 /* Assets.xcassets */,
 				F61F8AEA2A93C093003856C5 /* OnboardingCollectionViewCell.xib */,
 				F61F8AE32A93800A003856C5 /* Info.plist */,
 				F61F8AE92A93C093003856C5 /* OnboardingCollectionViewCell.swift */,
-				F65608932A98F16200BC12DB /* HomeViewController.swift */,
 				F61F8AE02A93800A003856C5 /* LaunchScreen.storyboard */,
+				F65608E92A9B9C2700BC12DB /* Utility.swift */,
 			);
 			path = JointWellnessApp;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				F65608942A98F16200BC12DB /* HomeViewController.swift in Sources */,
 				F61F8ADA2A938009003856C5 /* ViewController.swift in Sources */,
+				F65608EA2A9B9C2700BC12DB /* Utility.swift in Sources */,
 				F61F8AD62A938009003856C5 /* AppDelegate.swift in Sources */,
 				F61F8AD82A938009003856C5 /* SceneDelegate.swift in Sources */,
 				F61F8AEB2A93C093003856C5 /* OnboardingCollectionViewCell.swift in Sources */,

@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
         let homeVC = homeStoryboard.instantiateViewController(withIdentifier: "HomeViewController")
         let window = UIApplication.shared.connectedScenes.flatMap { ($0 as? UIWindowScene)?.windows ?? [] }.first { $0.isKeyWindow }
-        window?.rootViewController = homeVC
+        window?.rootViewController = Utility.getTabBarController()
         }
     }
 
