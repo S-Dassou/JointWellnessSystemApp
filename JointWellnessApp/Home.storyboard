@@ -19,6 +19,52 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="03a-Bd-aSM">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="161" id="hQZ-wp-7L3" customClass="HomeTableViewCell" customModule="JointWellnessApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hQZ-wp-7L3" id="3pD-4f-e1e">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="161"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6d-9I-FME">
+                                                    <rect key="frame" x="20" y="10" width="353" height="141"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xrc-sQ-erE">
+                                                            <rect key="frame" x="206.66666666666663" y="6.6666666666666714" width="141.33333333333337" height="128"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IRC-sE-TAm">
+                                                            <rect key="frame" x="10" y="10" width="120" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Xrc-sQ-erE" firstAttribute="centerY" secondItem="E6d-9I-FME" secondAttribute="centerY" id="0fe-W2-pxo"/>
+                                                        <constraint firstItem="IRC-sE-TAm" firstAttribute="top" secondItem="E6d-9I-FME" secondAttribute="top" constant="10" id="7Pk-8b-xM4"/>
+                                                        <constraint firstItem="Xrc-sQ-erE" firstAttribute="height" secondItem="E6d-9I-FME" secondAttribute="height" multiplier="0.907801" id="Wvg-xD-sXc"/>
+                                                        <constraint firstItem="IRC-sE-TAm" firstAttribute="leading" secondItem="E6d-9I-FME" secondAttribute="leading" constant="10" id="djf-gU-COH"/>
+                                                        <constraint firstItem="Xrc-sQ-erE" firstAttribute="width" secondItem="E6d-9I-FME" secondAttribute="width" multiplier="0.4" id="jNb-pw-Wcw"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xrc-sQ-erE" secondAttribute="trailing" constant="5" id="rxu-9b-P2t"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="E6d-9I-FME" firstAttribute="leading" secondItem="3pD-4f-e1e" secondAttribute="leading" constant="20" id="IM9-Xy-vbM"/>
+                                                <constraint firstAttribute="bottom" secondItem="E6d-9I-FME" secondAttribute="bottom" constant="10" id="Sal-gx-Z5U"/>
+                                                <constraint firstItem="E6d-9I-FME" firstAttribute="top" secondItem="3pD-4f-e1e" secondAttribute="top" constant="10" id="Yyt-fS-naS"/>
+                                                <constraint firstAttribute="trailing" secondItem="E6d-9I-FME" secondAttribute="trailing" constant="20" id="ryJ-Xc-dX8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="Xrc-sQ-erE" id="zIs-5c-1cN"/>
+                                            <outlet property="categoryLabel" destination="IRC-sE-TAm" id="7Y6-JX-TPi"/>
+                                            <outlet property="containerView" destination="E6d-9I-FME" id="oRe-kp-DJ6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
