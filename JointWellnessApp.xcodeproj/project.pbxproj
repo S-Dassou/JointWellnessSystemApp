@@ -20,6 +20,8 @@
 		F65608942A98F16200BC12DB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608932A98F16200BC12DB /* HomeViewController.swift */; };
 		F65608EA2A9B9C2700BC12DB /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608E92A9B9C2700BC12DB /* Utility.swift */; };
 		F65608F02AA2305D00BC12DB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608EF2AA2305D00BC12DB /* HomeTableViewCell.swift */; };
+		F65608F62AA5F2CA00BC12DB /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */; };
+		F65608F92AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		F65608932A98F16200BC12DB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F65608E92A9B9C2700BC12DB /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		F65608EF2AA2305D00BC12DB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
+		F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,21 +74,31 @@
 		F61F8AD42A938009003856C5 /* JointWellnessApp */ = {
 			isa = PBXGroup;
 			children = (
-				F61F8AD52A938009003856C5 /* AppDelegate.swift */,
 				F61F8AD72A938009003856C5 /* SceneDelegate.swift */,
-				F61F8AD92A938009003856C5 /* ViewController.swift */,
-				F61F8ADB2A938009003856C5 /* Main.storyboard */,
+				F61F8AD52A938009003856C5 /* AppDelegate.swift */,
+				F65608E92A9B9C2700BC12DB /* Utility.swift */,
+				F65608F72AA5FB8400BC12DB /* Onboarding */,
 				F65608912A98E84C00BC12DB /* Home.storyboard */,
+				F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */,
+				F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */,
 				F65608932A98F16200BC12DB /* HomeViewController.swift */,
 				F65608EF2AA2305D00BC12DB /* HomeTableViewCell.swift */,
 				F61F8ADE2A93800A003856C5 /* Assets.xcassets */,
-				F61F8AEA2A93C093003856C5 /* OnboardingCollectionViewCell.xib */,
 				F61F8AE32A93800A003856C5 /* Info.plist */,
-				F61F8AE92A93C093003856C5 /* OnboardingCollectionViewCell.swift */,
 				F61F8AE02A93800A003856C5 /* LaunchScreen.storyboard */,
-				F65608E92A9B9C2700BC12DB /* Utility.swift */,
 			);
 			path = JointWellnessApp;
+			sourceTree = "<group>";
+		};
+		F65608F72AA5FB8400BC12DB /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				F61F8AD92A938009003856C5 /* ViewController.swift */,
+				F61F8AE92A93C093003856C5 /* OnboardingCollectionViewCell.swift */,
+				F61F8AEA2A93C093003856C5 /* OnboardingCollectionViewCell.xib */,
+				F61F8ADB2A938009003856C5 /* Main.storyboard */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,10 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65608942A98F16200BC12DB /* HomeViewController.swift in Sources */,
+				F65608F62AA5F2CA00BC12DB /* CategoryDetailViewController.swift in Sources */,
 				F61F8ADA2A938009003856C5 /* ViewController.swift in Sources */,
 				F65608F02AA2305D00BC12DB /* HomeTableViewCell.swift in Sources */,
 				F65608EA2A9B9C2700BC12DB /* Utility.swift in Sources */,
 				F61F8AD62A938009003856C5 /* AppDelegate.swift in Sources */,
+				F65608F92AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift in Sources */,
 				F61F8AD82A938009003856C5 /* SceneDelegate.swift in Sources */,
 				F61F8AEB2A93C093003856C5 /* OnboardingCollectionViewCell.swift in Sources */,
 			);

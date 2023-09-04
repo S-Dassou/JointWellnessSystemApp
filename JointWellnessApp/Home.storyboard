@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="03a-Bd-aSM">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="161" id="hQZ-wp-7L3" customClass="HomeTableViewCell" customModule="JointWellnessApp" customModuleProvider="target">
@@ -76,11 +76,102 @@
                             <constraint firstItem="03a-Bd-aSM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="yTn-fZ-tCx"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Xn4-Ng-BkV"/>
                     <connections>
                         <outlet property="homeTableView" destination="03a-Bd-aSM" id="zwB-MV-weO"/>
+                        <segue destination="guc-Ge-hqA" kind="show" identifier="CategoryDetailSegue" id="jO9-TI-jWD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.28244274809151" y="-2.1126760563380285"/>
+        </scene>
+        <!--Category Detail View Controller-->
+        <scene sceneID="aqs-KJ-w56">
+            <objects>
+                <viewController id="guc-Ge-hqA" customClass="CategoryDetailViewController" customModule="JointWellnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xdf-XX-Qxz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hi8-mK-Yh8">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="156" id="pB6-sn-ulj" customClass="CategoryDetailTableViewCell" customModule="JointWellnessApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="156"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pB6-sn-ulj" id="7wD-DY-mrA">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="156"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWo-Rh-SwT">
+                                                    <rect key="frame" x="40" y="21" width="353" height="134"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UXe-gQ-BEZ">
+                                                            <rect key="frame" x="217" y="-2" width="128" height="128"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Names" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1l-LD-Wlh">
+                                                            <rect key="frame" x="10.000000000000007" y="10" width="121.66666666666669" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="g1l-LD-Wlh" firstAttribute="top" secondItem="HWo-Rh-SwT" secondAttribute="top" constant="10" id="CCA-HV-e0g"/>
+                                                        <constraint firstItem="g1l-LD-Wlh" firstAttribute="leading" secondItem="HWo-Rh-SwT" secondAttribute="leading" constant="10" id="YQz-jg-isr"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="HWo-Rh-SwT" firstAttribute="top" secondItem="7wD-DY-mrA" secondAttribute="topMargin" constant="10" id="DM3-L6-FB0"/>
+                                                <constraint firstItem="HWo-Rh-SwT" firstAttribute="bottom" secondItem="7wD-DY-mrA" secondAttribute="bottomMargin" constant="10" id="H7p-Oa-k6K"/>
+                                                <constraint firstItem="HWo-Rh-SwT" firstAttribute="trailing" secondItem="7wD-DY-mrA" secondAttribute="trailingMargin" constant="20" id="Xjq-FQ-Sqd"/>
+                                                <constraint firstItem="HWo-Rh-SwT" firstAttribute="leading" secondItem="7wD-DY-mrA" secondAttribute="leadingMargin" constant="20" id="yfU-qq-FOM"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryDetailContainerView" destination="HWo-Rh-SwT" id="Ew8-Uf-Z8L"/>
+                                            <outlet property="routineImage" destination="UXe-gQ-BEZ" id="Ou5-Ig-7Ez"/>
+                                            <outlet property="routineNameLabel" destination="g1l-LD-Wlh" id="MTc-3G-WIU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ihm-vt-ZYb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hi8-mK-Yh8" firstAttribute="top" secondItem="ihm-vt-ZYb" secondAttribute="top" id="4vO-PQ-wFC"/>
+                            <constraint firstItem="hi8-mK-Yh8" firstAttribute="bottom" secondItem="ihm-vt-ZYb" secondAttribute="bottom" id="X65-go-z5g"/>
+                            <constraint firstItem="hi8-mK-Yh8" firstAttribute="leading" secondItem="ihm-vt-ZYb" secondAttribute="leading" id="dDU-LW-LUL"/>
+                            <constraint firstItem="ihm-vt-ZYb" firstAttribute="trailing" secondItem="hi8-mK-Yh8" secondAttribute="trailing" id="jvF-bB-5cD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zOF-hM-dQS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ckN-Na-TFL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1788.5496183206105" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rib-8Z-8I6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7WP-Mn-9cd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pLV-k5-jg5">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ZeG-R8-8B0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s8U-ej-WH2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
         </scene>
