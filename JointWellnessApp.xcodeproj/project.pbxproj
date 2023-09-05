@@ -22,6 +22,7 @@
 		F65608F02AA2305D00BC12DB /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608EF2AA2305D00BC12DB /* HomeTableViewCell.swift */; };
 		F65608F62AA5F2CA00BC12DB /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */; };
 		F65608F92AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */; };
+		F65608FB2AA644E200BC12DB /* StretchCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608FA2AA644E200BC12DB /* StretchCategoryModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		F65608EF2AA2305D00BC12DB /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
+		F65608FA2AA644E200BC12DB /* StretchCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchCategoryModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +76,11 @@
 		F61F8AD42A938009003856C5 /* JointWellnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				F65608F72AA5FB8400BC12DB /* Onboarding */,
+				F65608FC2AA64BCB00BC12DB /* Models */,
 				F61F8AD72A938009003856C5 /* SceneDelegate.swift */,
 				F61F8AD52A938009003856C5 /* AppDelegate.swift */,
 				F65608E92A9B9C2700BC12DB /* Utility.swift */,
-				F65608F72AA5FB8400BC12DB /* Onboarding */,
 				F65608912A98E84C00BC12DB /* Home.storyboard */,
 				F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */,
 				F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */,
@@ -99,6 +102,14 @@
 				F61F8ADB2A938009003856C5 /* Main.storyboard */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F65608FC2AA64BCB00BC12DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F65608FA2AA644E200BC12DB /* StretchCategoryModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +198,7 @@
 				F65608EA2A9B9C2700BC12DB /* Utility.swift in Sources */,
 				F61F8AD62A938009003856C5 /* AppDelegate.swift in Sources */,
 				F65608F92AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift in Sources */,
+				F65608FB2AA644E200BC12DB /* StretchCategoryModel.swift in Sources */,
 				F61F8AD82A938009003856C5 /* SceneDelegate.swift in Sources */,
 				F61F8AEB2A93C093003856C5 /* OnboardingCollectionViewCell.swift in Sources */,
 			);
