@@ -16,6 +16,7 @@ struct StretchCategory {
 
 struct StretchRoutine {
     var title: String
+    var routineImage: UIImage?
     var description: String
     var duration: Int
     var category: StretchCategory
