@@ -10,7 +10,8 @@ import UIKit
 class CategoryDetailViewController: UIViewController {
 
     @IBOutlet weak var categoryDetailTableView: UITableView!
-    
+    var category: Category!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         categoryDetailTableView.estimatedRowHeight = 80
@@ -19,11 +20,12 @@ class CategoryDetailViewController: UIViewController {
         categoryDetailTableView.dataSource = self
         categoryDetailTableView.delegate = self
        
+        var routines = category.routines
     }
 }
 extension CategoryDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return routines.count
+        return category.routines.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -59,7 +59,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoryImage" destination="Xrc-sQ-erE" id="zIs-5c-1cN"/>
+                                            <outlet property="categoryImageView" destination="Xrc-sQ-erE" id="5Yv-sG-BmK"/>
                                             <outlet property="categoryLabel" destination="IRC-sE-TAm" id="7Y6-JX-TPi"/>
                                             <outlet property="containerView" destination="E6d-9I-FME" id="oRe-kp-DJ6"/>
                                         </connections>

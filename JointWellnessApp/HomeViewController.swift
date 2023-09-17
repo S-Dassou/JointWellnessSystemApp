@@ -8,8 +8,9 @@
 import UIKit
 
 struct Category {
-    let catImage: UIImage
+    let image: UIImage
     let catName: String
+    var routines: [StretchRoutine] = []
 }
 
 class HomeViewController: UIViewController {
@@ -17,14 +18,21 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var homeTableView: UITableView!
     
     let categories: [Category] = [
-    Category(catImage: UIImage(named: "hips")!, catName: "Hips"),
-    Category(catImage: UIImage(named: "atWork")!, catName: "At Work"),
-    Category(catImage: UIImage(named: "shoulder")!, catName: "Shoulder Mobility"),
-    Category(catImage: UIImage(named: "clock")!, catName: "5 Minute Fix")
+        Category(image: UIImage(named: "hips")!, catName: "Hips", routines: []),
+        Category(image: UIImage(named: "atWork")!, catName: "At Work", routines: []),
+    Category(image: UIImage(named: "shoulder")!, catName: "Shoulder Mobility", routines: []),
+    Category(image: UIImage(named: "clock")!, catName: "5 Minute Fix", routines: [])
     ]
     
     var categoryImages: [String] = []
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CategoryDetailSegue" {
+            let category = sender as! Category
+            let viewController = segue.destination as? CategoryDetailViewController
+            viewController?.category = category
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         homeTableView.estimatedRowHeight = 80
@@ -47,7 +55,7 @@ extension HomeViewController: UITableViewDataSource {
         let cell = homeTableView.dequeueReusableCell(withIdentifier: "HomeTableViewCell", for: indexPath) as! HomeTableViewCell
         cell.selectionStyle = .none
         cell.categoryLabel.text = category.catName
-        cell.categoryImage.image = category.catImage
+        cell.categoryImageView.image = category.image
         return cell
     }
     
@@ -60,6 +68,6 @@ extension HomeViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "CategoryDetailSegue", sender: nil)
+        performSegue(withIdentifier: "CategoryDetailSegue", sender: categories[indexPath.row])
     }
 }
