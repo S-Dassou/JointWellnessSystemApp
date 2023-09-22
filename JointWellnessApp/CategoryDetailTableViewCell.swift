@@ -11,7 +11,9 @@ class CategoryDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var categoryDetailContainerView: UIView!
     @IBOutlet weak var routineNameLabel: UILabel!
-    @IBOutlet weak var routineImage: UIImageView!
+    @IBOutlet weak var routineImageView: UIImageView!
+    @IBOutlet weak var routineTimeLabel: UILabel!
+    @IBOutlet weak var routineDescriptionLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -14,25 +14,9 @@ struct StretchCategory {
    // var routines: [StretchRoutine]
 }
 
-struct StretchRoutine {
-    var title: String
-    var routineImage: UIImage?
-    var description: String
-    var duration: Int
-    var category: StretchCategory
-    var steps: [StretchExercise]
-}
-
-struct StretchExercise {
-    var name: String
-    var description: String
-    var time: Int
-    var lottieAnimation: String?
-}
-
-let categories: [StretchCategory] = []
-let routines: [StretchRoutine] = []
-let exercises: [StretchExercise] = []
+//let categories: [StretchCategory] = []
+//let routines: [StretchRoutine] = []
+//let exercises: [StretchExercise] = []
 
 let armRoutine1Exercises: [StretchExercise] = [
 StretchExercise(name: "tricep stretch 1", description: "lift arm 1", time: 1),
@@ -40,8 +24,8 @@ StretchExercise(name: "tricep stretch 2", description: "lift arm 2", time: 1),
 StretchExercise(name: "tricep stretch 3", description: "lift arm 3", time: 1)
 ]
 
-let category1 = StretchCategory(name: "Arms")
-let armRoutine1 = StretchRoutine(title: "tricep", description: "10 minute stretch", duration: 10, category: category1, steps: armRoutine1Exercises)
+//let category1 = StretchCategory(name: "Arms")
+//let armRoutine1 = StretchRoutine(title: "tricep", description: "10 minute stretch", duration: 10, category: category1, steps: armRoutine1Exercises)
 
 
 

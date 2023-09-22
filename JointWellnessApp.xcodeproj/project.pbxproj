@@ -23,6 +23,8 @@
 		F65608F62AA5F2CA00BC12DB /* CategoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */; };
 		F65608F92AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */; };
 		F65608FB2AA644E200BC12DB /* StretchCategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65608FA2AA644E200BC12DB /* StretchCategoryModel.swift */; };
+		F65609602ABD97E000BC12DB /* StretchRoutineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F656095F2ABD97E000BC12DB /* StretchRoutineModel.swift */; };
+		F65609622ABD97FD00BC12DB /* StretchExerciseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F65609612ABD97FD00BC12DB /* StretchExerciseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		F65608F52AA5F2CA00BC12DB /* CategoryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailViewController.swift; sourceTree = "<group>"; };
 		F65608F82AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		F65608FA2AA644E200BC12DB /* StretchCategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchCategoryModel.swift; sourceTree = "<group>"; };
+		F656095F2ABD97E000BC12DB /* StretchRoutineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchRoutineModel.swift; sourceTree = "<group>"; };
+		F65609612ABD97FD00BC12DB /* StretchExerciseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchExerciseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				F65608FA2AA644E200BC12DB /* StretchCategoryModel.swift */,
+				F656095F2ABD97E000BC12DB /* StretchRoutineModel.swift */,
+				F65609612ABD97FD00BC12DB /* StretchExerciseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,11 +198,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F65608942A98F16200BC12DB /* HomeViewController.swift in Sources */,
+				F65609602ABD97E000BC12DB /* StretchRoutineModel.swift in Sources */,
 				F65608F62AA5F2CA00BC12DB /* CategoryDetailViewController.swift in Sources */,
 				F61F8ADA2A938009003856C5 /* ViewController.swift in Sources */,
 				F65608F02AA2305D00BC12DB /* HomeTableViewCell.swift in Sources */,
 				F65608EA2A9B9C2700BC12DB /* Utility.swift in Sources */,
 				F61F8AD62A938009003856C5 /* AppDelegate.swift in Sources */,
+				F65609622ABD97FD00BC12DB /* StretchExerciseModel.swift in Sources */,
 				F65608F92AA5FC8900BC12DB /* CategoryDetailTableViewCell.swift in Sources */,
 				F65608FB2AA644E200BC12DB /* StretchCategoryModel.swift in Sources */,
 				F61F8AD82A938009003856C5 /* SceneDelegate.swift in Sources */,
